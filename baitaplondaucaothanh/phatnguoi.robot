@@ -28,7 +28,7 @@ Chuong Trinh Phat Nguoi
         ${captcha_element}=    Get WebElement    //*[@id="imgCaptcha"]
         Capture Element Screenshot    ${captcha_element}    captcha.png
 
-        ${text}=    Read Captcha    captcha.png
+        ${text}=    Đọc Mã Captcha    captcha.png
         Log    CAPTCHA: ${text}    console=True
         Input Text    //input[@name="txt_captcha"]    ${text}
         Click Element    xpath://input[@class='btnTraCuu']
